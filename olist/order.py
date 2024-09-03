@@ -19,23 +19,23 @@ class Order:
         """
         Returns a DataFrame with:
         [order_id, wait_time, expected_wait_time, delay_vs_expected, order_status]
-        and filters out non-delivered orders unless specified
+        and filters out non-delivered orders unless specified otherwise
         """
         orders = self.data['orders']
         #filter on delivered orders
         if is_delivered:
             delivered = orders[orders['order_status']=='delivered'].copy()
-        #changing to string to datetime
-        delivered['order_purchase_timestamp'] = pd.to_datetime(delivered['order_purchase_timestamp'],format='%Y-%m-%d')
+        #parsing string to datetime
+        delivered['order_purchase_timestamp'] = pd.to_datetime(delivered['order_purchase_timestamp'])
         delivered['order_approved_at'] = pd.to_datetime(delivered['order_approved_at'])
-        delivered['order_delivered_carrier_date'] = pd.to_datetime(delivered['order_delivered_carrier_date'],format='%Y-%m-%d')
-        delivered['order_delivered_customer_date'] = pd.to_datetime(delivered['order_delivered_customer_date'],format='%Y-%m-%d')
-        delivered['order_estimated_delivery_date'] = pd.to_datetime(delivered['order_estimated_delivery_date'],format='%Y-%m-%d')
+        delivered['order_delivered_carrier_date'] = pd.to_datetime(delivered['order_delivered_carrier_date'])
+        delivered['order_delivered_customer_date'] = pd.to_datetime(delivered['order_delivered_customer_date'])
+        delivered['order_estimated_delivery_date'] = pd.to_datetime(delivered['order_estimated_delivery_date'])
         #getting wait_time (# of days between order_purchase_timestamp and order_delivered_customer_date)
         delivered['wait_time'] = (delivered['order_delivered_customer_date'] - delivered['order_purchase_timestamp'])/ np.timedelta64(1, 'D')
         #getting expected wait time (the number of days between order_purchase_timestamp and estimated_delivery_date)
         delivered['expected_wait_time'] = (delivered['order_estimated_delivery_date']- delivered['order_purchase_timestamp'])/ np.timedelta64(1, 'D')
-        #delay_vs_expected
+        #getting delay_vs_expected
         #if the actual order_delivered_customer_date is later than the estimated delivery date,
         #returns the number of days between the two dates, otherwise return 0
         delivered['delay_vs_expected'] = (delivered['order_delivered_customer_date'] - delivered['order_estimated_delivery_date'])/ np.timedelta64(1, 'D')
