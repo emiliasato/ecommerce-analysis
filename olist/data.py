@@ -18,9 +18,3 @@ class Olist:
         key_names = [csv.replace('_dataset.csv',"").replace("olist_","").replace('.csv','') for csv in file_names]
         data = {key:pd.read_csv(os.path.join(csv_path,csv)) for key,csv in zip(key_names,file_names)}
         return data
-
-    def ping(self):
-        """
-        You call ping I print pong.
-        """
-        print("pong")
