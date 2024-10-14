@@ -49,8 +49,13 @@ Olist's data team gave us the following values for these scaling parameters:
 2. Explatory Data Analysis
 3. Conclusion
 
+## CURRENT FINANCIALS ## 
+
+--> Conclude that reputaion costs must be cut down
+
 ## FEATURE ENGINEERING
 
+Get features to see what exactly are driving low review scores and how we can eliminate them. 
 ### Orders
 
 👉 We have created the `get_training_data` method in `olist/order.py` which returns a DataFrame with the following features:
