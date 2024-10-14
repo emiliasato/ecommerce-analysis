@@ -27,8 +27,21 @@ Revenues:
 - Subscription fees: Olist charges 80 BRL by month per seller
 
 Reputation Cost: 
+Cost associated with bad reviews. (1-star = 100 BRL, 2-star = 50 BRL, 3-star = 40 BRL)
 
 In the long term, bad customer experience has business implicatins: low repeat rate, immediate customer support cost, refunds or unfavourable word of mouth communication. We will have an estimate measure of the monetary cost for each bad review. 
+
+IT Cost:
+
+Olist's total cumulated IT Costs scale with the square root of the total number of sellers that has ever join the platform, as well as the square root of the total cumulated number of items that were ever sold.
+
+$$
+IT\_costs = \alpha \cdot \sqrt{n\_sellers} + \beta \cdot \sqrt{n\_items}
+$$
+
+Olist's data team gave us the following values for these scaling parameters:
+
+𝛼=3157.27 𝛽=978.23 💡 Both number of sellers to manage and sales transaction are costly for IT systems. 💡 Yet square roots reflect scale-effects: IT-system are often more efficient as they grow bigger. 💡 Alpha > Beta means that Olist has a lower IT Cost with few sellers selling a lot of items rather than the opposite
 
 ## 2.Steps
 1. Feature Engineering
