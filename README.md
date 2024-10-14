@@ -75,6 +75,7 @@ In the long term, bad customer experience has business implicatins: low repeat r
 | `n_orders`            | int    | number of unique orders the seller was involved with                      |
 | `quantity`            | int    | total number of items sold by this seller                                 |
 | `quantity_per_order`  | float  | average number of items per order for this seller                         |
+| `cost_of_review`  | float  | total reputaion cost due to bad reviews                       |
 | `sales`               | float  | total sales associated with this seller (excluding freight value) in BRL   |
 
 ### Products
