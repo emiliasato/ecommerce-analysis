@@ -39,6 +39,8 @@ In the long term, bad customer experience has business implicatins: low repeat r
 
 👉 created a DataFrame with the following features:
 
+olist/order.py
+
 | feature_name              | type  | description                                                                 |
 |:--------------------------|:-----:|:----------------------------------------------------------------------------|
 | `order_id`                | str   | the id of the order                                                         |
@@ -58,6 +60,8 @@ In the long term, bad customer experience has business implicatins: low repeat r
 ### Sellers
 
 👉 created a DataFrame with the following features:
+
+olist/seller.py
 
 | feature_name          | type   | description                                                              |
 |-----------------------|--------|--------------------------------------------------------------------------|
