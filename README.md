@@ -37,9 +37,7 @@ In the long term, bad customer experience has business implicatins: low repeat r
 
 ### Orders
 
-👉 created a DataFrame with the following features:
-
-olist/order.py
+👉 We have created the `get_training_data` method in `olist/order.py` which returns a DataFrame with the following features:
 
 | feature_name              | type  | description                                                                 |
 |:--------------------------|:-----:|:----------------------------------------------------------------------------|
@@ -59,9 +57,7 @@ olist/order.py
 
 ### Sellers
 
-👉 created a DataFrame with the following features:
-
-olist/seller.py
+👉 We have created the `get_training_data` method in `olist/seller.py` which returns a DataFrame with the following features:
 
 | feature_name          | type   | description                                                              |
 |-----------------------|--------|--------------------------------------------------------------------------|
@@ -80,3 +76,28 @@ olist/seller.py
 | `quantity`            | int    | total number of items sold by this seller                                 |
 | `quantity_per_order`  | float  | average number of items per order for this seller                         |
 | `sales`               | float  | total sales associated with this seller (excluding freight value) in BRL   |
+
+### Products
+
+👉 We have created the `get_training_data` method in `olist/product.py` which returns a DataFrame with the following features:
+
+| feature_name                  |  type   | description                                                                |
+|:------------------------------|:-------:|:---------------------------------------------------------------------------|
+| `product_id`                  |   str   | id of the product **UNIQUE**                                               |
+| `category`                    |   str   | category name (in English)                                                 |
+| `product_name_length`         |  float  | number of characters of a product name                                     |
+| `product_description_length`  |  float  | number of characters of a product description                              |
+| `product_photos_qty`          |   int   | number of photos available for a product                                   |
+| `product_weight_g`            |  float  | weight of the product                                                      |
+| `product_length_cm`           |  float  | length of the product                                                      |
+| `product_height_cm`           |  float  | height of the product                                                      |
+| `product_width_cm`            |  float  | width of the product                                                       |
+| `price`                       |  float  | average price at which the product is sold                                 |
+| `wait_time`                   |  float  | average wait time (in days) for orders in which the product was sold       |
+| `share_of_five_stars`         |  float  | share of five-star review scores for orders in which the product was sold  |
+| `share_of_one_stars`          |  float  | share of one-star review scores for orders in which the product was sold   |
+| `review_score`                |  float  | average review score of the orders in which the product was sold           |
+| `n_orders`                    |   int   | number of orders in which the product appears                              |
+| `quantity`                    |   int   | total number of products sold for each product_id                          |
+| `sales`                       |   int   | total sales (in BRL) for each product_id                                   |
+
