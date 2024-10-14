@@ -22,16 +22,16 @@ Data Source: https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce/data
 
 ### 1.4 P&L Rules
 
-Revenues:
-- Sales fee: Olist takes 10% cut on the product price (excl. freight) of each order delivered
-- Subscription fees: Olist charges 80 BRL by month per seller
+**Revenues:**
+- **Sales fee:** Olist takes 10% cut on the product price (excl. freight) of each order delivered
+- **Subscription fees:** Olist charges 80 BRL by month per seller
 
-Reputation Cost: 
+**Reputation Cost:** 
+In the long term, bad customer experience has business implicatins: low repeat rate, immediate customer support cost, refunds or unfavourable word of mouth communication. Below are the estimate measure of the monetary cost for each bad review. 
+
 Cost associated with bad reviews. (1-star = 100 BRL, 2-star = 50 BRL, 3-star = 40 BRL)
 
-In the long term, bad customer experience has business implicatins: low repeat rate, immediate customer support cost, refunds or unfavourable word of mouth communication. We will have an estimate measure of the monetary cost for each bad review. 
-
-IT Cost:
+**IT Cost:**
 
 Olist's total cumulated IT Costs scale with the square root of the total number of sellers that has joined the platform, as well as the square root of the total cumulated number of items that were ever sold.
 
