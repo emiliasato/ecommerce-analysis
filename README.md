@@ -2,9 +2,11 @@
 
 ##  Context:
 
-Olist is a Brazilian E-Commerce store that connects small businesses from all over Brazil to channels without hassle and with a single contract. Those merchants are able to sell their products through the Olist store and ship them diretly to the customers using Olist logistics parterns. 
+Olist is a leading e-commerce service that connects small businesses from all over Brazil to main marketplaces channels. Those merchants are able to sell their products through the Olist store and ship them diretly to the customers using Olist logistics parterns. 
 
-After a customer purchases the product from Olist Store a seller gets notified to fulfill that order. Once the customer receives the product, or the estimated delivery date is due, the customer gets a satisfaction survey by email where he can give a note for the purchase experience and write down some comments.
+After a customer purchases the product from Olist Store, the seller gets notified to fulfill that order. Once the customer receives the product, or the estimated delivery date is due, the customer gets a satisfaction survey by email where he can give a note for the purchase experience and write down some comments.
+
+Olist charges sellers a monthly subscription fee and a sales fee for each orders. 
 
 
 ## Dataset
