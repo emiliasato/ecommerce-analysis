@@ -7,12 +7,9 @@
 How can Olist improve it's profit? 
 
 ### 1.2 Who is Olist?
-Olist is a leading e-commerce service that connects small businesses from all over Brazil to main marketplaces channels. Those merchants are able to sell their products through the Olist store and ship them diretly to the customers using Olist logistics parterns. 
+Olist provides a leading e-commerce service connects small businesses across Brazil to major marketplaces, enabling them to sell products through the Olist store and ship via partner logistics. After a purchase, sellers are notified to fulfill orders, and customers receive a satisfaction survey once the product is delivered or the delivery date passes. 
 
-After a customer purchases the product from Olist Store, the seller gets notified to fulfill that order. Once the customer receives the product, or the estimated delivery date is due, the customer gets a satisfaction survey by email where he can give a note for the purchase experience and write down some comments.
-
-Olist charges sellers a monthly subscription fee and a sales fee for each orders. 
-
+Olist charges sellers a monthly subscription and a fee per order.
 
 ### 1.3 Dataset
 
@@ -47,7 +44,7 @@ Olist's data team gave us the following values for these scaling parameters:
 💡 Yet square roots reflect scale-effects: IT-system are often more efficient as they grow bigger. \
 💡 Alpha > Beta means that Olist has a lower IT Cost with few sellers selling a lot of items rather than the opposite \
 
-## 2.Steps
+## 2. Steps
 1. Feature Engineering
 2. Explatory Data Analysis
 3. Conclusion
@@ -127,10 +124,17 @@ Olist's data team gave us the following values for these scaling parameters:
 Q. Which order features are impacting review scores? 
 [Link to orders EDA](notebooks/EDA-orders.ipynb)
 
+Findings:
+
+From running a multivariate regression, we found that the wait time and delay 
+
 ### Sellers EDA
 Q. Which order features are impacting review scores? 
 [Link to sellers EDA](notebooks/EDA-sellers.ipynb)
+Findings:
 
 ### Products EDA
 Q. Which order features are impacting review scores? 
 [Link to sellers EDA](notebooks/EDA-products.ipynb)
+Findings:
+
