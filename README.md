@@ -33,5 +33,19 @@ In the long term, bad customer experience has business implicatins: low repeat r
 2. Explatory Data Analysis
 3. Conclusion
 
-
+| feature_name              | type  | description                                                                 |
+|:--------------------------|:-----:|:----------------------------------------------------------------------------|
+| `order_id`                | str   | the id of the order                                                         |
+| `wait_time`               | float | the number of days between order_purchase_timestamp and order_delivered_customer_date |
+| `expected_wait_time`      | float | the number of days between order_purchase_timestamp and estimated_delivery_date |
+| `delay_vs_expected`       | float | if the actual order_delivered_customer_date is later than the estimated delivery date, returns the number of days between the two dates, otherwise return 0 |
+| `order_status`            | str   | the status of the order                                                     |
+| `dim_is_five_star`        | int   | 1 if the order received a five-star review, 0 otherwise                     |
+| `dim_is_one_star`         | int   | 1 if the order received a one_star, 0 otherwise                             |
+| `review_score`            | int   | from 1 to 5                                                                 |
+| `number_of_products`      | int   | number of products that the order contains                                  |
+| `number_of_sellers`       | int   | number of sellers involved in the order                                     |
+| `price`                   | float | total price of the order paid by customer                                   |
+| `freight_value`           | float | value of the freight paid by customer                                       |
+| `distance_customer_seller`| float | the distance in km between customer and seller (optional)                   |
 
