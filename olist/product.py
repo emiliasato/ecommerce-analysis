@@ -1,6 +1,3 @@
-# TO CONTENT CREATORS: MIRROR UPDATES OF THIS FILE INTO
-# -`olist/product.py`
-# - `olist/product_updated.py`
 import pandas as pd
 import numpy as np
 from olist.data import Olist

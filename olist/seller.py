@@ -1,6 +1,3 @@
-# TO CONTENT CREATORS: MIRROR UPDATES OF THIS FILE INTO
-# -`olist/seller.py`
-# - `olist/seller_updated.py`
 import pandas as pd
 import numpy as np
 from olist.data import Olist
@@ -105,7 +102,8 @@ class Seller:
         })
         df['months_on_olist'] = round(
             (df['date_last_sale'] - df['date_first_sale']) /
-            np.timedelta64(1, 'M'))
+            np.timedelta64(1, 'D') / 30.44)
+            # np.timedelta64(1, 'M'))
         return df
 
     def get_quantity(self):
