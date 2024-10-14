@@ -101,4 +101,16 @@ In the long term, bad customer experience has business implicatins: low repeat r
 | `quantity`                    |   int   | total number of products sold for each product_id                          |
 | `sales`                       |   int   | total sales (in BRL) for each product_id                                   |
 
-[Link to Notebook](notebooks/EDA-orders.ipynb)
+## EXPLORATORY DATA ANALYSIS
+
+### Orders EDA
+Q. Which order features are impacting review scores? 
+[Link to orders EDA](notebooks/EDA-orders.ipynb)
+
+### Sellers EDA
+Q. Which order features are impacting review scores? 
+[Link to sellers EDA](notebooks/EDA-sellers.ipynb)
+
+### Products EDA
+Q. Which order features are impacting review scores? 
+[Link to sellers EDA](notebooks/EDA-products.ipynb)
