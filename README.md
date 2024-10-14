@@ -4,7 +4,7 @@
 
 ### 1.1 Problem Statement
 
-How could Olist improve it's profit? 
+How can Olist improve it's profit? 
 
 ### 1.2 Who is Olist?
 Olist is a leading e-commerce service that connects small businesses from all over Brazil to main marketplaces channels. Those merchants are able to sell their products through the Olist store and ship them diretly to the customers using Olist logistics parterns. 
@@ -16,7 +16,9 @@ Olist charges sellers a monthly subscription fee and a sales fee for each orders
 
 ### 1.3 Dataset
 
-Dataset contains information on 100k orders from 2016 to 2018 made on Olist, covering various aspects such as status, price, products, payment methods, payment and freight performance, customer review scores, etc. 
+Dataset contains information on 100k orders from 2016 to 2018 made on Olist, covering various aspects such as order status, price, review scores, products, payment methods, payment and freight performance, etc. 
+
+Data Source: https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce/data
 
 ### 1.4 P&L Rules
 
