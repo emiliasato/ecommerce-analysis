@@ -28,10 +28,16 @@ Reputation Cost:
 
 In the long term, bad customer experience has business implicatins: low repeat rate, immediate customer support cost, refunds or unfavourable word of mouth communication. We will have an estimate measure of the monetary cost for each bad review. 
 
-## Steps
+## 2.Steps
 1. Feature Engineering
 2. Explatory Data Analysis
 3. Conclusion
+
+## FEATURE ENGINEERING
+
+### Orders
+
+👉 created a DataFrame with the following features:
 
 | feature_name              | type  | description                                                                 |
 |:--------------------------|:-----:|:----------------------------------------------------------------------------|
@@ -49,3 +55,24 @@ In the long term, bad customer experience has business implicatins: low repeat r
 | `freight_value`           | float | value of the freight paid by customer                                       |
 | `distance_customer_seller`| float | the distance in km between customer and seller (optional)                   |
 
+### Sellers
+
+👉 created a DataFrame with the following features:
+
+| feature_name          | type   | description                                                              |
+|-----------------------|--------|--------------------------------------------------------------------------|
+| `seller_id`           | str    | the id of the seller **UNIQUE**                                           |
+| `seller_city`         | str    | the city where seller is located                                          |
+| `seller_state`        | str    | the state where seller is located                                         |
+| `delay_to_carrier`    | float  | returns 0 if the order is delivered before the shipping_limit_date, otherwise the value of the delay |
+| `wait_time`           | float  | average wait_time (duration of deliveries) per seller                     |
+| `date_first_sale`     | datetime | date of the first sale on Olist                                         |
+| `date_last_sale`      | datetime | date of the last sale on Olist                                          |
+| `months_on_olist`     | float  | round number of months on Olist                                           |
+| `share_of_five_stars` | float  | share of five-star reviews for orders in which the seller was involved     |
+| `share_of_one_stars`  | float  | share of one-star reviews for orders in which the seller was involved      |
+| `review_score`        | float  | average review score for orders in which the seller was involved           |
+| `n_orders`            | int    | number of unique orders the seller was involved with                      |
+| `quantity`            | int    | total number of items sold by this seller                                 |
+| `quantity_per_order`  | float  | average number of items per order for this seller                         |
+| `sales`               | float  | total sales associated with this seller (excluding freight value) in BRL   |
