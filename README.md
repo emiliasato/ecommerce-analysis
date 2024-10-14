@@ -33,15 +33,19 @@ In the long term, bad customer experience has business implicatins: low repeat r
 
 IT Cost:
 
-Olist's total cumulated IT Costs scale with the square root of the total number of sellers that has ever join the platform, as well as the square root of the total cumulated number of items that were ever sold.
+Olist's total cumulated IT Costs scale with the square root of the total number of sellers that has joined the platform, as well as the square root of the total cumulated number of items that were ever sold.
 
 $$
-IT\_costs = \alpha \cdot \sqrt{n\_sellers} + \beta \cdot \sqrt{n\_items}
+IT_costs = \alpha \cdot \sqrt{n\_sellers} + \beta \cdot \sqrt{n\_items}
 $$
 
 Olist's data team gave us the following values for these scaling parameters:
 
-𝛼=3157.27 𝛽=978.23 💡 Both number of sellers to manage and sales transaction are costly for IT systems. 💡 Yet square roots reflect scale-effects: IT-system are often more efficient as they grow bigger. 💡 Alpha > Beta means that Olist has a lower IT Cost with few sellers selling a lot of items rather than the opposite
+𝛼=3157.27 𝛽=978.23 
+
+💡 The number of sellers and products are costly for IT systems. 
+💡 Yet square roots reflect scale-effects: IT-system are often more efficient as they grow bigger. 
+💡 Alpha > Beta means that Olist has a lower IT Cost with few sellers selling a lot of items rather than the opposite
 
 ## 2.Steps
 1. Feature Engineering
