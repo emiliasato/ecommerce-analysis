@@ -101,4 +101,4 @@ In the long term, bad customer experience has business implicatins: low repeat r
 | `quantity`                    |   int   | total number of products sold for each product_id                          |
 | `sales`                       |   int   | total sales (in BRL) for each product_id                                   |
 
-[notebooks/EDA-orders.ipynb]
+[Link to Notebook](notebooks/EDA-orders.ipynb)
