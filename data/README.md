@@ -2,7 +2,7 @@
 
 The Olist dataset consists of information (customers, reviews, products etc..) on 100k orders from the [Olist Store](http://www.olist.com/).
 
-9 csvs (~120mb) are available and can be [downloaded here](https://www.kaggle.com/olistbr/brazilian-ecommerce). We recommend placing them in the `data/csv` folder.
+9 csvs (~120mb) are available and can be [downloaded here](https://www.kaggle.com/olistbr/brazilian-ecommerce). 
 
 - <a href="#data_model">**Data Model**</a>
 - <a href="#olist_customers_dataset">**olist_customers_dataset**</a>
