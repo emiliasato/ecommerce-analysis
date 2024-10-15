@@ -189,6 +189,8 @@ Q. Which product features are impacting review scores?
   
 Q. What happens if we remove the worst performing sellers? 
 
+**You can expect to increase profit by 390K BRL just be removing the worst 347 sellers!**
+
 <div id="data_model">
 <img src='img/worst_sellers.png' width='700'>
 <div id="olist_customers_dataset">
