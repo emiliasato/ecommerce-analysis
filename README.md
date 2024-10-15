@@ -163,14 +163,23 @@ Developed additional features related to orders, products, and sellers, to run f
 
 ## 2.3 EXPLORATORY DATA ANALYSIS
 
-Q. Which order features are impacting review scores? 
+**Q. Which order features are impacting review scores?**\
 [Link to orders EDA](notebooks/EDA-orders.ipynb)
 
+
+- Wait time and delay vs expected has the strongest negative correlation with review scores.
+<div id="data_model">
+<img src='img/orders_corr.png' width='700'>
+<div id="olist_customers_dataset">
+    
 - Wait time is the most powerful feature that explains likelihood of getting 1 star reviews.
-  - Wait time and delay vs expected has the strongest negative correlation with review scores. 
   - Based on the multivariate logistic regression results, the wait_time coefficient of 0.84 indicates that an increase in wait time is associated with a higher likelihood of receiving a 1-star review. Specifically, for each unit increase in wait time, the probability of a 1-star review increases by 0.84, suggesting that longer wait times significantly impact customer satisfaction negatively.
   - This finding emphasizes the importance of managing wait times to improve review scores and overall customer experience.
 - Other features such as price, number of products, number of sellers, freight value, and the distance between sellers and customers did not exhibit high coefficients or had elevated p-values, indicating that they do not significantly explain low review scores.
+
+<div id="data_model">
+<img src='img/order_logistic_regression.png' width='700'>
+<div id="olist_customers_dataset">
 
 Q. Which seller features are impacting review scores? 
 [Link to sellers EDA](notebooks/EDA-sellers.ipynb)
