@@ -86,7 +86,7 @@ Get features to see what exactly are driving low review scores and how we can el
 
 ### Orders
 
-👉 We have created the `get_training_data` method in `olist/order.py` which returns a DataFrame with the following features:
+👉 We have created the `get_training_data` method in [olist/order.py](olist/order.py) which returns a DataFrame with the following features:
 
 | feature_name              | type  | description                                                                 |
 |:--------------------------|:-----:|:----------------------------------------------------------------------------|
@@ -106,7 +106,7 @@ Get features to see what exactly are driving low review scores and how we can el
 
 ### Sellers
 
-👉 We have created the `get_training_data` method in `olist/seller.py` which returns a DataFrame with the following features:
+👉 We have created the `get_training_data` method in [olist/seller.py](olist/seller.py) which returns a DataFrame with the following features:
 
 | feature_name          | type   | description                                                              |
 |-----------------------|--------|--------------------------------------------------------------------------|
@@ -129,7 +129,7 @@ Get features to see what exactly are driving low review scores and how we can el
 
 ### Products
 
-👉 We have created the `get_training_data` method in `olist/product.py` which returns a DataFrame with the following features:
+👉 We have created the `get_training_data` method in [olist/product.py](olist/product.py) which returns a DataFrame with the following features:
 
 | feature_name                  |  type   | description                                                                |
 |:------------------------------|:-------:|:---------------------------------------------------------------------------|
