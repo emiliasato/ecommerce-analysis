@@ -1,8 +1,8 @@
 <div id="data_model">
-<img src='img/olist-logo.png' width='200'>
+<img src='img/olist-logo.png' width='170'>
 <div id="olist_customers_dataset">
 
-# Olist Ecommerce Analysis
+# Ecommerce Analysis
 
 ##  1. Context:
 
