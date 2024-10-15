@@ -62,8 +62,22 @@ Olist's data team gave us the following values for these scaling parameters:
 2. Explatory Data Analysis
 3. Conclusion
 
-## CURRENT FINANCIALS ## 
 
+## Initial Anaysis on Financial Performance ## 
+
+Gross Profit is around 668K BRL
+
+<div id="data_model">
+<img src='img/financial_metrics.png' width='700'>
+<div id="olist_customers_dataset">
+
+Total Revenue is around **2.8M BRL** - well diversified with around half from subscription and around half from sales
+- REPUTATION COSTS ARE VERY DAMAGING
+- Reputation Costs make up of more than **76%** of total costs $\rightarrow$ risk of losing more customers in the future!!
+
+<div id="data_model">
+<img src='img/breakdown.png' width='700'>
+<div id="olist_customers_dataset">
 --> Conclude that reputaion costs must be cut down
 
 ## FEATURE ENGINEERING
