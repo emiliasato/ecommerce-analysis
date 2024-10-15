@@ -17,6 +17,8 @@ Dataset contains information on 100k orders from 2016 to 2018 made on Olist, cov
 
 Data Source: https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce/data
 
+[For more details on the dataset please click here.](data/README.md)
+
 ### 1.4 P&L Rules
 
 **Revenues:**
