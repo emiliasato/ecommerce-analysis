@@ -4,7 +4,7 @@
 
 # Ecommerce Analysis
 
-##  1. Context:
+##  1. CONTEXT:
 
 ### 1.1 Problem Statement
 
@@ -57,12 +57,16 @@ Olist's data team gave us the following values for these scaling parameters:
 💡 Yet square roots reflect scale-effects: IT-system are often more efficient as they grow bigger. \
 💡 Alpha > Beta means that Olist has a lower IT Cost with few sellers selling a lot of items rather than the opposite \
 
-## 2. Data Analysis
+## 2. DATA ANALYSIS
 1. Initial Analaysis on Financial Performance
 2. Feature Engineering
-3. 
+3. Which order features are impacting review scores? 
 4. Explatory Data Analysis
-5. Conclusion
+    - Q. Which order features are impacting review scores?
+    - Q. Which seller features are impacting review scores?
+    - Q. Which product features are impacting review scores? 
+    - Q. What happens if we remove the worst performing sellers?
+6. Conclusion/Recommendations
 
 
 ## 2.1 Initial Analysis on Financial Performance ## 
@@ -83,7 +87,7 @@ Reptuation Costs are very damaging as it makes up of more than 76% of total cost
 
 **It is essential to identify the key factors contributing to low review scores, as these factors subsequently lead to increased reputation costs.**
 
-## 2.2 FEATURE ENGINEERING
+## 2.2 Feature Engineering
 
 Developed additional features related to orders, products, and sellers, to run further analysis on what exactly are driving low review scores and how we can eliminate them. 
 
@@ -158,7 +162,7 @@ Developed additional features related to orders, products, and sellers, to run f
 | `revenues`               | float  | total revenue contribution to Olist that is associated with this product  |
 | `profits`               | float  | total profit contribution to Olist that is associated with this product   |
 
-## EXPLORATORY DATA ANALYSIS
+## 2.3 EXPLORATORY DATA ANALYSIS
 
 Q. Which order features are impacting review scores? 
 [Link to orders EDA](notebooks/EDA-orders.ipynb)
@@ -175,7 +179,7 @@ Q. Which seller features are impacting review scores?
 - Wait time and delay to carrier have high impact on lowering review scores, having the largest signifiance in the linear regression coefficients.
 - Seller state doesn't seem to be statistically significant when explaining review scores. 
 
-Q. Which order features are impacting review scores? 
+Q. Which product features are impacting review scores? 
 [Link to sellers EDA](notebooks/EDA-products.ipynb)
 
 - The price has a small but positive impact on the review score. It could be a psychological effect when customers do not want to admit a product is bad because they paid a certain amount of money on it ?
@@ -190,7 +194,7 @@ Q. What happens if we remove the worst performing sellers?
 <div id="olist_customers_dataset">
 
 
-# CONCLUSION/RECOMMENDATIONS
+# 2.4 CONCLUSION/RECOMMENDATIONS
 
 1. Implement a ban on sellers who consistently misses shipping deadline
 2. Ask customers to review each product separately so that we have cleaner data on review scores
