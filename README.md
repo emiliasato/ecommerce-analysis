@@ -185,7 +185,15 @@ Q. Which seller features are impacting review scores?
 [Link to sellers EDA](notebooks/EDA-sellers.ipynb)
 
 - Wait time and delay to carrier have high impact on lowering review scores, having the largest signifiance in the linear regression coefficients.
-- Seller state doesn't seem to be statistically significant when explaining review scores. 
+- Seller state doesn't seem to be statistically significant when explaining review scores.
+
+<div id="data_model">
+<img src='img/seller_scatterplot.png' width='700'>
+<div id="olist_customers_dataset">
+
+<div id="data_model">
+<img src='img/seller_regression.png' width='700'>
+<div id="olist_customers_dataset">
 
 Q. Which product features are impacting review scores? 
 [Link to sellers EDA](notebooks/EDA-products.ipynb)
