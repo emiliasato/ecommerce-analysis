@@ -164,7 +164,6 @@ Developed additional features related to orders, products, and sellers, to run f
 Q. Which order features are impacting review scores? 
 [Link to orders EDA](notebooks/EDA-orders.ipynb)
 
-Findings:
 - Wait time is the most powerful feature that explains likelihood of getting 1 star reviews.
   - Wait time and delay vs expected has the strongest negative correlation with review scores. 
   - Based on the multivariate logistic regression results, the wait_time coefficient of 0.84 indicates that an increase in wait time is associated with a higher likelihood of receiving a 1-star review. Specifically, for each unit increase in wait time, the probability of a 1-star review increases by 0.84, suggesting that longer wait times significantly impact customer satisfaction negatively.
@@ -175,14 +174,12 @@ Findings:
 Q. Which seller features are impacting review scores? 
 [Link to sellers EDA](notebooks/EDA-sellers.ipynb)
 
-Findings:
 - Wait time and delay to carrier have high impact on lowering review scores, having the largest signifiance in the linear regression coefficients.
 - Seller state doesn't seem to be statistically significant when explaining review scores. 
 
 ### Products EDA
 Q. Which order features are impacting review scores? 
 [Link to sellers EDA](notebooks/EDA-products.ipynb)
-Findings:
 
 - The price has a small but positive impact on the review score. It could be a psychological effect when customers do not want to admit a product is bad because they paid a certain amount of money on it ?
 - The number of photos and `length of description both have small positive impact on review score but not so much. 
