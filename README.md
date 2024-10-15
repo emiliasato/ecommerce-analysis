@@ -160,7 +160,6 @@ Developed additional features related to orders, products, and sellers, to run f
 
 ## EXPLORATORY DATA ANALYSIS
 
-### Orders EDA
 Q. Which order features are impacting review scores? 
 [Link to orders EDA](notebooks/EDA-orders.ipynb)
 
@@ -170,14 +169,12 @@ Q. Which order features are impacting review scores?
   - This finding emphasizes the importance of managing wait times to improve review scores and overall customer experience.
 - Other features such as price, number of products, number of sellers, freight value, and the distance between sellers and customers did not exhibit high coefficients or had elevated p-values, indicating that they do not significantly explain low review scores.
 
-### Sellers EDA
 Q. Which seller features are impacting review scores? 
 [Link to sellers EDA](notebooks/EDA-sellers.ipynb)
 
 - Wait time and delay to carrier have high impact on lowering review scores, having the largest signifiance in the linear regression coefficients.
 - Seller state doesn't seem to be statistically significant when explaining review scores. 
 
-### Products EDA
 Q. Which order features are impacting review scores? 
 [Link to sellers EDA](notebooks/EDA-products.ipynb)
 
@@ -186,5 +183,6 @@ Q. Which order features are impacting review scores?
 - The product volume in itself does not seem to have a big impact on the review score, but the impact is still slightly negative. 
 - The `wait_time` has a huge negative impact on the review_score, consistent to our previous analysis. 
   
+Q. What happens if we remove the worst performing sellers? 
 
 
