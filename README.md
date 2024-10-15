@@ -65,7 +65,7 @@ Olist's data team gave us the following values for these scaling parameters:
 5. Conclusion
 
 
-## Initial Anaysis on Financial Performance ## 
+## 2.1 Initial Anaysis on Financial Performance ## 
 
 Gross Profit is around **668K BRL**.
 
@@ -83,13 +83,13 @@ Reptuation Costs are very damaging as it makes up of more than 76% of total cost
 
 **It is essential to identify the key factors contributing to low review scores, as these factors subsequently lead to increased reputation costs.**
 
-## FEATURE ENGINEERING
+## 2.2 FEATURE ENGINEERING
 
-Get features to see what exactly are driving low review scores and how we can eliminate them. 
+Developed additional features related to orders, products, and sellers, to see what exactly are driving low review scores and how we can eliminate them. 
 
 ### Orders
 
-👉 We have created the `get_training_data` method in [olist/order.py](olist/order.py) which returns a DataFrame with the following features:
+👉 Created the `get_training_data` method in [olist/order.py](olist/order.py) which returns a DataFrame with the following features:
 
 | feature_name              | type  | description                                                                 |
 |:--------------------------|:-----:|:----------------------------------------------------------------------------|
@@ -109,7 +109,7 @@ Get features to see what exactly are driving low review scores and how we can el
 
 ### Sellers
 
-👉 We have created the `get_training_data` method in [olist/seller.py](olist/seller.py) which returns a DataFrame with the following features:
+👉 Created the `get_training_data` method in [olist/seller.py](olist/seller.py) which returns a DataFrame with the following features:
 
 | feature_name          | type   | description                                                              |
 |-----------------------|--------|--------------------------------------------------------------------------|
@@ -129,10 +129,12 @@ Get features to see what exactly are driving low review scores and how we can el
 | `quantity_per_order`  | float  | average number of items per order for this seller                         |
 | `cost_of_review`  | float  | total reputaion cost due to bad reviews                       |
 | `sales`               | float  | total sales associated with this seller (excluding freight value) in BRL   |
+| `revenues`               | float  | total revenue contribution to Olist that is associated with this seller  |
+| `profits`               | float  | total profit contribution to Olist that is associated with this seller   |
 
 ### Products
 
-👉 We have created the `get_training_data` method in [olist/product.py](olist/product.py) which returns a DataFrame with the following features:
+👉 Created the `get_training_data` method in [olist/product.py](olist/product.py) which returns a DataFrame with the following features:
 
 | feature_name                  |  type   | description                                                                |
 |:------------------------------|:-------:|:---------------------------------------------------------------------------|
@@ -153,6 +155,8 @@ Get features to see what exactly are driving low review scores and how we can el
 | `n_orders`                    |   int   | number of orders in which the product appears                              |
 | `quantity`                    |   int   | total number of products sold for each product_id                          |
 | `sales`                       |   int   | total sales (in BRL) for each product_id                                   |
+| `revenues`               | float  | total revenue contribution to Olist that is associated with this product  |
+| `profits`               | float  | total profit contribution to Olist that is associated with this product   |
 
 ## EXPLORATORY DATA ANALYSIS
 
