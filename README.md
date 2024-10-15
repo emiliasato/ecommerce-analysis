@@ -15,9 +15,15 @@ Olist charges sellers a monthly subscription and a fee per order.
 
 Dataset contains information on 100k orders from 2016 to 2018 made on Olist, covering various aspects such as order status, price, review scores, products, payment methods, payment and freight performance, etc. 
 
-Data Source: https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce/data
+The schema below represents each dataset and which key to use to join them:
+
+<div id="data_model">
+<img src='../img/olist-schema.png' width='700'>
+<div id="olist_customers_dataset">
 
 [For more details on the dataset please click here.](data/README.md)
+
+Data Source: https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce/data
 
 ### 1.4 P&L Rules
 
