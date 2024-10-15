@@ -166,7 +166,6 @@ Developed additional features related to orders, products, and sellers, to run f
 **Q. Which order features are impacting review scores?**\
 [Link to orders EDA](notebooks/EDA-orders.ipynb)
 
-
 - Wait time and delay vs expected has the strongest negative correlation with review scores.
 <div id="data_model">
 <img src='img/orders_corr.png' width='700'>
@@ -181,7 +180,7 @@ Developed additional features related to orders, products, and sellers, to run f
 <img src='img/order_logistic_regression.png' width='700'>
 <div id="olist_customers_dataset">
 
-Q. Which seller features are impacting review scores? 
+**Q. Which seller features are impacting review scores?**\
 [Link to sellers EDA](notebooks/EDA-sellers.ipynb)
 
 - Wait time and delay to carrier have high impact on lowering review scores, having the largest signifiance in the linear regression coefficients.
@@ -195,15 +194,27 @@ Q. Which seller features are impacting review scores?
 <img src='img/seller_regression.png' width='700'>
 <div id="olist_customers_dataset">
 
-Q. Which product features are impacting review scores? 
+**Q. Which product features are impacting review scores?**\
 [Link to sellers EDA](notebooks/EDA-products.ipynb)
 
 - The price has a small but positive impact on the review score. It could be a psychological effect when customers do not want to admit a product is bad because they paid a certain amount of money on it ?
 - The number of photos and `length of description both have small positive impact on review score but not so much. 
 - The product volume in itself does not seem to have a big impact on the review score, but the impact is still slightly negative. 
 - The `wait_time` has a huge negative impact on the review_score, consistent to our previous analysis. 
-  
-Q. What happens if we remove the worst performing sellers? 
+
+**Q. Which product categories are generating the most profit for Olist?**
+
+<div id="data_model">
+<img src='img/profit_category.png' width='700'>
+<div id="olist_customers_dataset">
+
+**Q. Which product categories are generating the most loss for Olist?**
+
+<div id="data_model">
+<img src='img/loss_category.png' width='700'>
+<div id="olist_customers_dataset">
+    
+**Q. What happens if we remove the worst performing sellers?**
 
 **You can expect to increase profit by 390K BRL just be removing the worst 347 sellers!**
 
