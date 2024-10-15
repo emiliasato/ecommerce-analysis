@@ -60,13 +60,12 @@ Olist's data team gave us the following values for these scaling parameters:
 ## 2. DATA ANALYSIS
 1. Initial Analysis on Financial Performance
 2. Feature Engineering
-3. Which order features are impacting review scores? 
-4. Explatory Data Analysis
+3. Explatory Data Analysis
     - Q. Which order features are impacting review scores?
     - Q. Which seller features are impacting review scores?
     - Q. Which product features are impacting review scores? 
     - Q. What happens if we remove the worst performing sellers?
-6. Conclusion/Recommendations
+4. Conclusion/Recommendations
 
 
 ## 2.1 Initial Analysis on Financial Performance ## 
