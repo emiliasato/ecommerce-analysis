@@ -19,11 +19,8 @@ The Olist dataset consists of information (customers, reviews, products etc..) o
 
 The schema below represents each dataset and which key to use to join them:
 
-![Olist Schema](../img/olist-schema.png)
 <div id="data_model">
-![Olist Schema](../img/olist-schema.png)
 <img src='../img/olist-schema.png' width='700'>
-
 <div id="olist_customers_dataset">
 
 ### olist_customers_dataset
