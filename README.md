@@ -204,7 +204,7 @@ Developed additional features related to orders, products, and sellers, to run f
 
 **Q. Which product categories are generating the most profit for Olist?**
 <div id="data_model">
-<img src='img/profit_category.png' width='1100'>
+<img src='img/profits_category.png' width='1100'>
 <div id="olist_customers_dataset">
 
 **Q. Which product categories are generating the most loss for Olist?**
