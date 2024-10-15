@@ -57,7 +57,7 @@ Olist's data team gave us the following values for these scaling parameters:
 💡 Yet square roots reflect scale-effects: IT-system are often more efficient as they grow bigger. \
 💡 Alpha > Beta means that Olist has a lower IT Cost with few sellers selling a lot of items rather than the opposite \
 
-## 2. Data Analaysis
+## 2. Data Analysis
 1. Initial Analaysis on Financial Performance
 2. Feature Engineering
 3. 
@@ -65,7 +65,7 @@ Olist's data team gave us the following values for these scaling parameters:
 5. Conclusion
 
 
-## 2.1 Initial Anaysis on Financial Performance ## 
+## 2.1 Initial Analysis on Financial Performance ## 
 
 Gross Profit is around **668K BRL**.
 
