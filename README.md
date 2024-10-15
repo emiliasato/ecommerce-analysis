@@ -188,7 +188,7 @@ Q. Which seller features are impacting review scores?
 - Seller state doesn't seem to be statistically significant when explaining review scores.
 
 <div id="data_model">
-<img src='img/seller_scatterplot.png' width='700'>
+<img src='img/seller_scatterplot.png' width='1000'>
 <div id="olist_customers_dataset">
 
 <div id="data_model">
