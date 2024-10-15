@@ -18,7 +18,7 @@ Dataset contains information on 100k orders from 2016 to 2018 made on Olist, cov
 The schema below represents each dataset and which key to use to join them:
 
 <div id="data_model">
-<img src='../img/olist-schema.png' width='700'>
+<img src='img/olist-schema.png' width='700'>
 <div id="olist_customers_dataset">
 
 [For more details on the dataset please click here.](data/README.md)
