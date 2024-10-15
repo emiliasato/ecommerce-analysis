@@ -57,36 +57,39 @@ Olist's data team gave us the following values for these scaling parameters:
 💡 Yet square roots reflect scale-effects: IT-system are often more efficient as they grow bigger. \
 💡 Alpha > Beta means that Olist has a lower IT Cost with few sellers selling a lot of items rather than the opposite \
 
-## 2. Steps
-1. Feature Engineering
-2. Explatory Data Analysis
-3. Conclusion
+## 2. Data Analysis
+1. Initial Analaysis on Financial Performance
+2. Feature Engineering
+3. 
+4. Explatory Data Analysis
+5. Conclusion
 
 
-## Initial Anaysis on Financial Performance ## 
+## 2.1 Initial Analysis on Financial Performance ## 
 
-Gross Profit is around 668K BRL
+Gross Profit is around **668K BRL**.
 
 <div id="data_model">
 <img src='img/financial_metrics.png' width='700'>
 <div id="olist_customers_dataset">
 
 Total Revenue is around **2.8M BRL** - well diversified with around half from subscription and around half from sales
-- REPUTATION COSTS ARE VERY DAMAGING
-- Reputation Costs make up of more than **76%** of total costs $\rightarrow$ risk of losing more customers in the future!!
+
+Reptuation Costs are very damaging as it makes up of more than 76% of total costs currently, and drives risk of losing more customers in the future. 
 
 <div id="data_model">
 <img src='img/breakdown.png' width='700'>
 <div id="olist_customers_dataset">
---> Conclude that reputaion costs must be cut down
 
-## FEATURE ENGINEERING
+**It is essential to identify the key factors contributing to low review scores, as these factors subsequently lead to increased reputation costs.**
 
-Get features to see what exactly are driving low review scores and how we can eliminate them. 
+## 2.2 FEATURE ENGINEERING
+
+Developed additional features related to orders, products, and sellers, to run further analysis on what exactly are driving low review scores and how we can eliminate them. 
 
 ### Orders
 
-👉 We have created the `get_training_data` method in `olist/order.py` which returns a DataFrame with the following features:
+👉 Created the `get_training_data` method in [olist/order.py](olist/order.py) which returns a DataFrame with the following features:
 
 | feature_name              | type  | description                                                                 |
 |:--------------------------|:-----:|:----------------------------------------------------------------------------|
@@ -106,7 +109,7 @@ Get features to see what exactly are driving low review scores and how we can el
 
 ### Sellers
 
-👉 We have created the `get_training_data` method in `olist/seller.py` which returns a DataFrame with the following features:
+👉 Created the `get_training_data` method in [olist/seller.py](olist/seller.py) which returns a DataFrame with the following features:
 
 | feature_name          | type   | description                                                              |
 |-----------------------|--------|--------------------------------------------------------------------------|
@@ -126,10 +129,12 @@ Get features to see what exactly are driving low review scores and how we can el
 | `quantity_per_order`  | float  | average number of items per order for this seller                         |
 | `cost_of_review`  | float  | total reputaion cost due to bad reviews                       |
 | `sales`               | float  | total sales associated with this seller (excluding freight value) in BRL   |
+| `revenues`               | float  | total revenue contribution to Olist that is associated with this seller  |
+| `profits`               | float  | total profit contribution to Olist that is associated with this seller   |
 
 ### Products
 
-👉 We have created the `get_training_data` method in `olist/product.py` which returns a DataFrame with the following features:
+👉 Created the `get_training_data` method in [olist/product.py](olist/product.py) which returns a DataFrame with the following features:
 
 | feature_name                  |  type   | description                                                                |
 |:------------------------------|:-------:|:---------------------------------------------------------------------------|
@@ -150,6 +155,8 @@ Get features to see what exactly are driving low review scores and how we can el
 | `n_orders`                    |   int   | number of orders in which the product appears                              |
 | `quantity`                    |   int   | total number of products sold for each product_id                          |
 | `sales`                       |   int   | total sales (in BRL) for each product_id                                   |
+| `revenues`               | float  | total revenue contribution to Olist that is associated with this product  |
+| `profits`               | float  | total profit contribution to Olist that is associated with this product   |
 
 ## EXPLORATORY DATA ANALYSIS
 
@@ -157,17 +164,27 @@ Get features to see what exactly are driving low review scores and how we can el
 Q. Which order features are impacting review scores? 
 [Link to orders EDA](notebooks/EDA-orders.ipynb)
 
-Findings:
-
-From running a multivariate regression, we found that the wait time and delay 
+- Wait time is the most powerful feature that explains likelihood of getting 1 star reviews.
+  - Wait time and delay vs expected has the strongest negative correlation with review scores. 
+  - Based on the multivariate logistic regression results, the wait_time coefficient of 0.84 indicates that an increase in wait time is associated with a higher likelihood of receiving a 1-star review. Specifically, for each unit increase in wait time, the probability of a 1-star review increases by 0.84, suggesting that longer wait times significantly impact customer satisfaction negatively.
+  - This finding emphasizes the importance of managing wait times to improve review scores and overall customer experience.
+- Other features such as price, number of products, number of sellers, freight value, and the distance between sellers and customers did not exhibit high coefficients or had elevated p-values, indicating that they do not significantly explain low review scores.
 
 ### Sellers EDA
-Q. Which order features are impacting review scores? 
+Q. Which seller features are impacting review scores? 
 [Link to sellers EDA](notebooks/EDA-sellers.ipynb)
-Findings:
+
+- Wait time and delay to carrier have high impact on lowering review scores, having the largest signifiance in the linear regression coefficients.
+- Seller state doesn't seem to be statistically significant when explaining review scores. 
 
 ### Products EDA
 Q. Which order features are impacting review scores? 
 [Link to sellers EDA](notebooks/EDA-products.ipynb)
-Findings:
+
+- The price has a small but positive impact on the review score. It could be a psychological effect when customers do not want to admit a product is bad because they paid a certain amount of money on it ?
+- The number of photos and `length of description both have small positive impact on review score but not so much. 
+- The product volume in itself does not seem to have a big impact on the review score, but the impact is still slightly negative. 
+- The `wait_time` has a huge negative impact on the review_score, consistent to our previous analysis. 
+  
+
 
