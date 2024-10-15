@@ -21,7 +21,7 @@ The schema below represents each dataset and which key to use to join them:
 
 <div id="data_model">
 
-<img src='../img/data_model_olist.png' width='700'>
+<img src='../img/olist-schema.png' width='700'>
 
 <div id="olist_customers_dataset">
 
