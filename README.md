@@ -73,7 +73,7 @@ Olist's data team gave us the following values for these scaling parameters:
 Gross Profit is around **668K BRL**.
 
 <div id="data_model">
-<img src='img/financial_metrics.png' width='700'>
+<img src='img/financial_metrics.png' width='900'>
 <div id="olist_customers_dataset">
 
 Total Revenue is around **2.8M BRL** - well diversified with around half from subscription and around half from sales
