@@ -203,9 +203,8 @@ Developed additional features related to orders, products, and sellers, to run f
 - The `wait_time` has a huge negative impact on the review_score, consistent to our previous analysis. 
 
 **Q. Which product categories are generating the most profit for Olist?**
-
 <div id="data_model">
-<img src='img/profit_category.png' width='700'>
+<img src='img/profit_category.png' width='1100'>
 <div id="olist_customers_dataset">
 
 **Q. Which product categories are generating the most loss for Olist?**
