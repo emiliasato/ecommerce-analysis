@@ -211,7 +211,7 @@ Developed additional features related to orders, products, and sellers, to run f
 **Q. Which product categories are generating the most loss for Olist?**
 
 <div id="data_model">
-<img src='img/loss_category.png' width='700'>
+<img src='img/loss_category.png' width='1100'>
 <div id="olist_customers_dataset">
     
 **Q. What happens if we remove the worst performing sellers?**
@@ -219,7 +219,7 @@ Developed additional features related to orders, products, and sellers, to run f
 **You can expect to increase profit by 390K BRL just be removing the worst 347 sellers!**
 
 <div id="data_model">
-<img src='img/worst_sellers.png' width='700'>
+<img src='img/worst_sellers.png' width='1100'>
 <div id="olist_customers_dataset">
 
 
