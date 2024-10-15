@@ -57,28 +57,31 @@ Olist's data team gave us the following values for these scaling parameters:
 💡 Yet square roots reflect scale-effects: IT-system are often more efficient as they grow bigger. \
 💡 Alpha > Beta means that Olist has a lower IT Cost with few sellers selling a lot of items rather than the opposite \
 
-## 2. Steps
-1. Feature Engineering
-2. Explatory Data Analysis
-3. Conclusion
+## 2. Data Analaysis
+1. Initial Analaysis on Financial Performance
+2. Feature Engineering
+3. 
+4. Explatory Data Analysis
+5. Conclusion
 
 
 ## Initial Anaysis on Financial Performance ## 
 
-Gross Profit is around 668K BRL
+Gross Profit is around **668K BRL**.
 
 <div id="data_model">
 <img src='img/financial_metrics.png' width='700'>
 <div id="olist_customers_dataset">
 
 Total Revenue is around **2.8M BRL** - well diversified with around half from subscription and around half from sales
-- REPUTATION COSTS ARE VERY DAMAGING
-- Reputation Costs make up of more than **76%** of total costs $\rightarrow$ risk of losing more customers in the future!!
+
+Reptuation Costs are very damaging as it makes up of more than 76% of total costs currently, and drives risk of losing more customers in the future. 
 
 <div id="data_model">
 <img src='img/breakdown.png' width='700'>
 <div id="olist_customers_dataset">
---> Conclude that reputaion costs must be cut down
+
+**It is essential to identify the key factors contributing to low review scores, as these factors subsequently lead to increased reputation costs.**
 
 ## FEATURE ENGINEERING
 
