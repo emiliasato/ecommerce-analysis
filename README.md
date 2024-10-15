@@ -85,7 +85,7 @@ Reptuation Costs are very damaging as it makes up of more than 76% of total cost
 
 ## 2.2 FEATURE ENGINEERING
 
-Developed additional features related to orders, products, and sellers, to see what exactly are driving low review scores and how we can eliminate them. 
+Developed additional features related to orders, products, and sellers, to run further analysis on what exactly are driving low review scores and how we can eliminate them. 
 
 ### Orders
 
