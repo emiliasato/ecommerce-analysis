@@ -185,4 +185,15 @@ Q. Which order features are impacting review scores?
   
 Q. What happens if we remove the worst performing sellers? 
 
+<div id="data_model">
+<img src='img/worst_sellers.png' width='700'>
+<div id="olist_customers_dataset">
+
+
+# CONCLUSION/RECOMMENDATIONS
+
+1. Implement a ban on sellers who consistently misses shipping deadline
+2. Ask customers to review each product separately so that we have cleaner data on review scores
+3. Ask sellers to upload at least to pictures in the posting
+
 
