@@ -58,7 +58,7 @@ Olist's data team gave us the following values for these scaling parameters:
 💡 Alpha > Beta means that Olist has a lower IT Cost with few sellers selling a lot of items rather than the opposite \
 
 ## 2. DATA ANALYSIS
-1. Initial Analaysis on Financial Performance
+1. Initial Analysis on Financial Performance
 2. Feature Engineering
 3. Which order features are impacting review scores? 
 4. Explatory Data Analysis
