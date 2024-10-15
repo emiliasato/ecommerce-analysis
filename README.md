@@ -8,10 +8,11 @@
 
 ### 1.1 Problem Statement
 
-How can Olist improve it's profit? 
+How can Olist improve it's profit?
+What are the key factors that are driving profit down?
 
 ### 1.2 Who is Olist?
-Olist provides a leading e-commerce service connects small businesses across Brazil to major marketplaces, enabling them to sell products through the Olist store and ship via partner logistics. After a purchase, sellers are notified to fulfill orders, and customers receive a satisfaction survey once the product is delivered or the delivery date passes. 
+Olist is a leading e-commerce service that connects small businesses across Brazil to major marketplaces, enabling them to sell products through the Olist store and ship via partner logistics. 
 
 Olist charges sellers a monthly subscription and a fee per order.
 
@@ -68,6 +69,7 @@ Olist's data team gave us the following values for these scaling parameters:
 ## FEATURE ENGINEERING
 
 Get features to see what exactly are driving low review scores and how we can eliminate them. 
+
 ### Orders
 
 👉 We have created the `get_training_data` method in `olist/order.py` which returns a DataFrame with the following features:
