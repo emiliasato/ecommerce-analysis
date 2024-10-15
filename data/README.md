@@ -2,7 +2,7 @@
 
 The Olist dataset consists of information (customers, reviews, products etc..) on 100k orders from the [Olist Store](http://www.olist.com/).
 
-9 csvs (~120mb) are available and can be [downloaded here](https://www.kaggle.com/olistbr/brazilian-ecommerce). We recommend placing them in the `data/csv` folder.
+9 csvs (~120mb) are available and can be [downloaded here](https://www.kaggle.com/olistbr/brazilian-ecommerce). 
 
 - <a href="#data_model">**Data Model**</a>
 - <a href="#olist_customers_dataset">**olist_customers_dataset**</a>
@@ -19,15 +19,16 @@ The Olist dataset consists of information (customers, reviews, products etc..) o
 
 The schema below represents each dataset and which key to use to join them:
 
+![Olist Schema](../img/olist-schema.png)
 <div id="data_model">
-
-<img src='../img/data_model_olist.png' width='700'>
+![Olist Schema](../img/olist-schema.png)
+<img src='../img/olist-schema.png' width='700'>
 
 <div id="olist_customers_dataset">
 
 ### olist_customers_dataset
 
-This dataset has information about the customer and their location. Use it to identify unique customers in the orders dataset and to find the orders delivery location.
+This dataset has information about the customer and their location. 
 
 - `customer_id`: key to the orders dataset. Each order has a unique customer_id.
 - `customer_unique_id`: unique identifier of a customer.
@@ -39,7 +40,7 @@ This dataset has information about the customer and their location. Use it to id
 
 ### olist_geolocation_dataset
 
-This dataset has information about Brazilian zip codes and lat/lng coordinates. Use it to plot maps and find distances between sellers and customers.
+This dataset has information about Brazilian zip codes and lat/lng coordinates. 
 
 - `geolocation_zip_code_prefix`: first 5 digits of zip code
 - `geolocation_lat`: latitude
@@ -126,7 +127,7 @@ This dataset includes data about the products sold by Olist.
 
 ### olist_sellers_dataset
 
-This dataset includes data about the sellers that fulfilled orders made at Olist. Use it to find the seller location and to identify which seller fulfilled each product.
+This dataset includes data about the sellers that fulfilled orders made at Olist. 
 
 - `seller_id`: seller unique identifier
 - `seller_zip_code_prefix`: first 5 digits of seller zip code

@@ -163,6 +163,10 @@ class Product:
         columns = list(products.select_dtypes(exclude=['object']).columns)
         agg_params = dict(zip(columns, [agg] * len(columns)))
         agg_params['quantity'] = 'sum'
+        agg_params['sales'] = 'sum'
+        agg_params['cost_of_reviews'] = 'sum'
+        agg_params['profits'] = 'sum'
+        agg_params['revenues'] = 'sum'
 
         product_cat = products.groupby("category").agg(agg_params)
         return product_cat
