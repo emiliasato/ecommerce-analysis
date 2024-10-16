@@ -166,17 +166,19 @@ Goal was to develop additional features related to orders, products, and sellers
 
 <img src='img/orders_corr.png' width='700'>
 
-Wait time and delay vs expected has the strongest negative correlation with review scores.
-
+Analysis on linear correlations:
+- The highest correlation coefficients with respect to the review score are wait_time (-0.33) and delay_vs_expected (-0.27). \
+- It is likely that overall delivery duration has a high impact on review scores. 
 
 <img src='img/order_logistic_regression.png' width='700'>
 
-Findings from logistic regression:
+Findings from a logistic regression model:
 - Wait time is the most powerful feature that explains likelihood of getting 1 star reviews.
-  - Based on the multivariate logistic regression results, the wait_time coefficient of 0.84 indicates that an increase in wait time is associated with a higher likelihood of receiving a 1-star review. Specifically, for each unit increase in wait time, the probability of a 1-star review increases by 0.84, suggesting that longer wait times significantly impact customer satisfaction negatively.
+  - For each unit increase in wait time, the probability of a 1-star review increases by 0.84, suggesting that longer wait times significantly impact customer satisfaction negatively.
   - This finding emphasizes the importance of managing wait times to improve review scores and overall customer experience.
     
 - Other features such as price, number of products, number of sellers, freight value, and the distance between sellers and customers did not exhibit high coefficients or had elevated p-values, indicating that they do not significantly explain low review scores.
+
 
 **Q. Which seller features are impacting review scores?**\
 [Link to sellers EDA notebook](notebooks/EDA-sellers.ipynb)
@@ -203,10 +205,11 @@ Scatterplot shows a trend that products with higher wait time and larger volume 
 
 Findings from OLS regression modeling review score from various product features:
 
-- The price has a small but positive impact on the review score. It could be a psychological effect when customers do not want to admit a product is bad because they paid a certain amount of money on it ?
-- The number of photos and `length of description both have small positive impact on review score but not so much. 
+- The price has a small but positive impact on the review score. It could be a psychological effect when customers do not want to admit a product is bad because they paid a certain amount of money on it.
+- The number of photos and the length of description both have small positive impact on review score.
 - The product volume in itself does not seem to have a big impact on the review score, but the impact is still slightly negative. 
-- The `wait_time` has a huge negative impact on the review_score, consistent to our previous analysis. 
+- The wait_time has the largest negative impact on the review_score, consistent to our previous analysis. 
+
 
 **Q. Which product categories are generating the most profit for Olist?**
 
@@ -218,22 +221,20 @@ Findings from OLS regression modeling review score from various product features
 
 **Q. Are customerse really disappointed about certain products, regardless of slow delivery time?**
 
-From our previous analysis, it seems that that `large products` like `office_furniture` and `furniture_mattress_and_upholstery`, which happen to take longer to deliver, are performing worse than other products.
+From our previous analysis, it seems that that large products like furnitures, which happen to take longer to deliver, are performing worse than other products.
 
 In our next analysis, we will find out if consumers are really disappointed about these products or simply by the slower delivery time by nature. 
 
-👉 Run an OLS to model `review_score` :
+👉 Run an OLS to model review score :
 * to isolate the real contribution of each product category on customer satisfaction, 
-* by holding `wait_time` constant.
+* by holding wait time constant.
 
 <img src='img/product_cat_coefficients.png' width='1100'>
 
 **Findings:**
 
-* Furnitures are not in the list of significant coefficients! 
-
+* Furnitures are not in the list of significant coefficients.
 * This means that the low review_score for furnitures may result from the delivery rather than the product itself.
-
 * On the contrary, `books`, `shoes`, and `food & drinks` are regularly driving higher reviews, even after accounting for generally quicker delivery time. 
 
 
