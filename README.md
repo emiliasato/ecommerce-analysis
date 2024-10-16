@@ -164,26 +164,33 @@ Goal was to develop additional features related to orders, products, and sellers
 **Q. Which order features are impacting review scores?**\
 [Link to orders EDA notebook](notebooks/EDA-orders.ipynb)
 
-- Wait time and delay vs expected has the strongest negative correlation with review scores.
-
 <img src='img/orders_corr.png' width='700'>
-    
+
+Wait time and delay vs expected has the strongest negative correlation with review scores.
+
+
+<img src='img/order_logistic_regression.png' width='700'>
+
+Findings from logistic regression:
 - Wait time is the most powerful feature that explains likelihood of getting 1 star reviews.
   - Based on the multivariate logistic regression results, the wait_time coefficient of 0.84 indicates that an increase in wait time is associated with a higher likelihood of receiving a 1-star review. Specifically, for each unit increase in wait time, the probability of a 1-star review increases by 0.84, suggesting that longer wait times significantly impact customer satisfaction negatively.
   - This finding emphasizes the importance of managing wait times to improve review scores and overall customer experience.
+    
 - Other features such as price, number of products, number of sellers, freight value, and the distance between sellers and customers did not exhibit high coefficients or had elevated p-values, indicating that they do not significantly explain low review scores.
-
-<img src='img/order_logistic_regression.png' width='700'>
 
 **Q. Which seller features are impacting review scores?**\
 [Link to sellers EDA notebook](notebooks/EDA-sellers.ipynb)
 
+<img src='img/seller_scatterplot.png' width='1000'>
+
+Scatterplot shows a slight trend that sellers with higher wait time and delay tends to have lower review scores. 
+
+<img src='img/seller_regression.png' width='700'>
+
+Findings from OLS regression modeling review score from various seller features:
 - Wait time and delay to carrier have high impact on lowering review scores, having the largest signifiance in the linear regression coefficients.
 - Seller state doesn't seem to be statistically significant when explaining review scores.
 
-<img src='img/seller_scatterplot.png' width='1000'>
-
-<img src='img/seller_regression.png' width='700'>
 
 **Q. Which product features are impacting review scores?**\
 [Link to products EDA notebook](notebooks/EDA-products.ipynb)
@@ -193,6 +200,8 @@ Goal was to develop additional features related to orders, products, and sellers
 Scatterplot shows a trend that products with higher wait time and larger volume tends to have lower review scores. 
 
 <img src='img/product_regreesion.png' width='1100'>
+
+Findings from OLS regression modeling review score from various product features:
 
 - The price has a small but positive impact on the review score. It could be a psychological effect when customers do not want to admit a product is bad because they paid a certain amount of money on it ?
 - The number of photos and `length of description both have small positive impact on review score but not so much. 
