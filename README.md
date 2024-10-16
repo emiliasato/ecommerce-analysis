@@ -42,7 +42,7 @@ Cost associated with bad reviews. (1-star = 100 BRL, 2-star = 50 BRL, 3-star = 4
 Olist's total cumulated IT Costs scale with the square root of the total number of sellers that has joined the platform, as well as the square root of the total cumulated number of items that were ever sold.
 
 $$
-IT_costs = \alpha \cdot \sqrt{n\_sellers} + \beta \cdot \sqrt{n\_items}
+IT costs = \alpha \cdot \sqrt{n\_sellers} + \beta \cdot \sqrt{n\_items}
 $$
 
 Olist's data team gave us the following values for these scaling parameters:
