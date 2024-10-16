@@ -164,7 +164,7 @@ Goal was to develop additional features related to orders, products, and sellers
 **Q. Which order features are impacting review scores?**\
 [Link to orders EDA notebook](notebooks/EDA-orders.ipynb)
 
-<img src='img/orders_corr.png' width='700'>
+<img src='img/orders_correlation.png' width='700'>
 
 Analysis on linear correlations:
 - The highest correlation coefficients with respect to the review score are wait_time (-0.33) and delay_vs_expected (-0.27). \
@@ -197,7 +197,7 @@ Findings from OLS regression modeling review score from various seller features:
 **Q. Which product features are impacting review scores?**\
 [Link to products EDA notebook](notebooks/EDA-products.ipynb)
 
-<img src='img/product_scatterplot.png' width='1100'>
+<img src='img/products_scatterplot.png' width='1100'>
 
 Scatterplot shows a trend that products with higher wait time and larger volume tends to have lower review scores. 
 
