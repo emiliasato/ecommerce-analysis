@@ -1,6 +1,6 @@
 ## Olist Data
 
-The Olist dataset consists of information (customers, reviews, products etc..) on 100k orders from the [Olist Store](http://www.olist.com/).
+The Olist dataset consists of information (customers, reviews, products etc..) on 100k orders from the Olist Store.
 
 9 csvs (~120mb) are available and can be [downloaded here](https://www.kaggle.com/olistbr/brazilian-ecommerce). 
 
