@@ -161,7 +161,7 @@ Goal was to develop additional features related to orders, products, and sellers
 ## 2.3 EXPLORATORY DATA ANALYSIS
 
 **Q. Which order features are impacting review scores?**\
-[Link to orders EDA nobteook](notebooks/EDA-orders.ipynb)
+[Link to orders EDA notebook](notebooks/EDA-orders.ipynb)
 
 - Wait time and delay vs expected has the strongest negative correlation with review scores.
 
@@ -185,13 +185,13 @@ Goal was to develop additional features related to orders, products, and sellers
 <img src='img/seller_regression.png' width='700'>
 
 **Q. Which product features are impacting review scores?**\
-[Link to products EDA notebooks](notebooks/EDA-products.ipynb)
+[Link to products EDA notebook](notebooks/EDA-products.ipynb)
 
 <img src='img/product_scatterplot.png' width='1100'>
 
 Scatterplot shows a trend that products with higher wait time and larger volume tends to have lower review scores. 
 
-<img src='img/product_regression.png' width='1100'>
+<img src='img/product_regreesion.png' width='1100'>
 
 - The price has a small but positive impact on the review score. It could be a psychological effect when customers do not want to admit a product is bad because they paid a certain amount of money on it ?
 - The number of photos and `length of description both have small positive impact on review score but not so much. 
@@ -214,7 +214,7 @@ Scatterplot shows a trend that products with higher wait time and larger volume 
 * to isolate the real contribution of each product category on customer satisfaction, 
 * by holding `wait_time` constant.
 
-<img src='img/product_cat_coefficientsy.png' width='1100'>
+<img src='img/product_cat_coefficients.png' width='1100'>
 
 **💡 Findings:**
 
