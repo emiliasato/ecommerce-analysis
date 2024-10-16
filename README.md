@@ -78,7 +78,8 @@ Reptuation Costs are very damaging as it makes up of more than 76% of total cost
 
 <img src='img/breakdown.png' width='700'>
 
-**It is essential to identify the key factors contributing to low review scores, as these factors subsequently lead to increased reputation costs.**
+
+**👉It is essential to identify the key factors contributing to low review scores, as these factors subsequently lead to increased reputation costs.**
 
 <div id="Feature_Engineering">
     
