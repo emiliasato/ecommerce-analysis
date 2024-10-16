@@ -64,6 +64,7 @@ Olist's data team gave us the following values for these scaling parameters:
 - <a href="#conclusion">**4. Conclusion/Recommendations**</a>
 
 <div id="Initial_Analysis_on_Financial_Performance">
+    
 ## 2.1 Initial Analysis on Financial Performance 
 
 Gross Profit is around **668K BRL**.
@@ -79,6 +80,7 @@ Reptuation Costs are very damaging as it makes up of more than 76% of total cost
 **It is essential to identify the key factors contributing to low review scores, as these factors subsequently lead to increased reputation costs.**
 
 <div id="Feature_Engineering">
+    
 ## 2.2 Feature Engineering
 
 Developed additional features related to orders, products, and sellers, to run further analysis on what exactly are driving low review scores and how we can eliminate them. 
@@ -155,6 +157,7 @@ Developed additional features related to orders, products, and sellers, to run f
 | `profits`               | float  | total profit contribution to Olist that is associated with this product   |
 
 <div id="eda">
+    
 ## 2.3 EXPLORATORY DATA ANALYSIS
 
 **Q. Which order features are impacting review scores?**\
@@ -204,6 +207,7 @@ You can expect to increase profit by **390K BRL** just by **removing the worst 3
 <img src='img/worst_sellers.png' width='1100'>
 
 <div id="conclusion">
+    
 # 2.4 CONCLUSION/RECOMMENDATIONS
 
 1. Implement a ban on sellers who consistently misses shipping deadline
