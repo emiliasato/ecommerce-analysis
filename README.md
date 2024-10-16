@@ -71,7 +71,7 @@ Gross Profit is around **668K BRL**.
 
 <img src='img/financial_metrics.png' width='900'>
 
-Total Revenue is around **2.8M BRL** - well diversified with around half from subscription and around half from sales
+Total Revenue is around **2.8M BRL** - well diversified with around half from subscription and around half from sales.
 
 Reptuation Costs are very damaging as it makes up of more than 76% of total costs currently, and drives risk of losing more customers in the future. 
 
@@ -83,7 +83,7 @@ Reptuation Costs are very damaging as it makes up of more than 76% of total cost
     
 ## 2.2 Feature Engineering
 
-Developed additional features related to orders, products, and sellers, to run further analysis on what exactly are driving low review scores and how we can eliminate them. 
+Goal was to develop additional features related to orders, products, and sellers, to run further analysis on what exactly are driving low review scores and how we can eliminate them. 
 
 ### Orders
 
