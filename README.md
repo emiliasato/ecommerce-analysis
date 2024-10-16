@@ -86,7 +86,11 @@ Reptuation Costs are very damaging as it makes up of more than 76% of total cost
 
 **It is essential to identify the key factors contributing to low review scores, as these factors subsequently lead to increased reputation costs.**
 
+<div id="Initial_Analysis_on_Financial_Performance">
+    
 ## 2.2 Feature Engineering
+
+<div id="Feature_Engineering">
 
 Developed additional features related to orders, products, and sellers, to run further analysis on what exactly are driving low review scores and how we can eliminate them. 
 
