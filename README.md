@@ -238,9 +238,9 @@ You can expect to increase profit by **390K BRL** just by **removing the worst 3
     
 # 2.4 CONCLUSION/RECOMMENDATIONS
 
-1. Implement a ban on sellers who consistently misses shipping deadline
-2. Start a service that assists sellers to ship out heavy/large products
-3. Ask customers to review each product separately so that we have cleaner data on review scores
-4. Ask sellers to upload at least to pictures in the posting
+1. Implement a ban (or penalty charge) on sellers who consistently misses shipping deadline.
+2. Start a service that assists sellers to ship out heavy/large products.
+3. Ask customers to review each product separately to have cleaner data on review scores.
+4. Ask sellers to upload at least 2 pictures in the posting.
 
 
