@@ -168,7 +168,7 @@ Goal was to develop additional features related to orders, products, and sellers
 <img src='img/orders_correlation.png' width='700'>
 
 Analysis on linear correlations:
-- The highest correlation coefficients with respect to the review score are wait_time (-0.33) and delay_vs_expected (-0.27). \
+- The highest correlation coefficients with respect to the review score are wait_time (-0.33) and delay_vs_expected (-0.27). 
 - It is likely that overall delivery duration has a high impact on review scores. 
 
 <img src='img/order_logistic_regression.png' width='700'>
@@ -198,7 +198,7 @@ Findings from OLS regression modeling review score from various seller features:
 **Q. Which product features are impacting review scores?**\
 [Link to products EDA notebook](notebooks/EDA-products.ipynb)
 
-<img src='img/products_scatterplot.png' width='1100'>
+<img src='img/products_scatter.png' width='1100'>
 
 Scatterplot shows a trend that products with higher wait time and larger volume tends to have lower review scores. 
 
@@ -209,16 +209,21 @@ Findings from OLS regression modeling review score from various product features
 - The price has a small but positive impact on the review score. It could be a psychological effect when customers do not want to admit a product is bad because they paid a certain amount of money on it.
 - The number of photos and the length of description both have small positive impact on review score.
 - The product volume in itself does not seem to have a big impact on the review score, but the impact is still slightly negative. 
-- The wait_time has the largest negative impact on the review_score, consistent to our previous analysis. 
+- The wait time has the largest negative impact on the review score, consistent to our previous analysis. 
+
 
 
 **Q. Which product categories are generating the most profit for Olist?**
 
+
 <img src='img/profits_category.png' width='1100'>
+
 
 **Q. Which product categories are generating the most loss for Olist?**
 
+
 <img src='img/loss_category.png' width='1100'>
+
 
 **Q. Are customerse really disappointed about certain products, regardless of slow delivery time?**
 
@@ -226,7 +231,7 @@ From our previous analysis, it seems that that large products like furnitures, w
 
 In our next analysis, we will find out if consumers are really disappointed about these products or simply by the slower delivery time by nature. 
 
-👉 Run an OLS to model review score :
+Run an OLS to model review score :
 * to isolate the real contribution of each product category on customer satisfaction, 
 * by holding wait time constant.
 
@@ -235,8 +240,8 @@ In our next analysis, we will find out if consumers are really disappointed abou
 **Findings:**
 
 * Furnitures are not in the list of significant coefficients.
-* This means that the low review_score for furnitures may result from the delivery rather than the product itself.
-* On the contrary, `books`, `shoes`, and `food & drinks` are regularly driving higher reviews, even after accounting for generally quicker delivery time. 
+* This means that the low review score for furnitures may result from the delivery rather than the product itself.
+* On the contrary, books, shoes, and food & drinks are regularly driving higher reviews, even after accounting for generally quicker delivery time. 
 
 
 **Q. What happens if we remove the worst performing sellers?**
