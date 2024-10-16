@@ -54,39 +54,32 @@ Olist's data team gave us the following values for these scaling parameters:
 💡 Alpha > Beta means that Olist has a lower IT Cost with few sellers selling a lot of items rather than the opposite \
 
 ## 2. DATA ANALYSIS
-- <a href="#Initial_Analysis_on_Financial_Performance">**2.1 Initial Analysis on Financial Performance**</a>
-- <a href="#Feature_Engineering">**2.2 Feature Engineering**</a>
-4. Explatory Data Analysis
+- <a href="#Initial_Analysis_on_Financial_Performance">**1. Initial Analysis on Financial Performance**</a>
+- <a href="#Feature_Engineering">**2. Feature Engineering**</a>
+- <a href="#eda">**3. Exploratory Data Analysis**</a>
     - Q. Which order features are impacting review scores?
     - Q. Which seller features are impacting review scores?
     - Q. Which product features are impacting review scores? 
     - Q. What happens if we remove the worst performing sellers?
-5. Conclusion/Recommendations
+- <a href="#conclusion">**4. Conclusion/Recommendations**</a>
 
-
+<div id="Initial_Analysis_on_Financial_Performance">
 ## 2.1 Initial Analysis on Financial Performance 
 
 Gross Profit is around **668K BRL**.
 
-<div id="data_model">
 <img src='img/financial_metrics.png' width='900'>
-<div id="olist_customers_dataset">
 
 Total Revenue is around **2.8M BRL** - well diversified with around half from subscription and around half from sales
 
 Reptuation Costs are very damaging as it makes up of more than 76% of total costs currently, and drives risk of losing more customers in the future. 
 
-<div id="data_model">
 <img src='img/breakdown.png' width='700'>
-<div id="olist_customers_dataset">
 
 **It is essential to identify the key factors contributing to low review scores, as these factors subsequently lead to increased reputation costs.**
 
-<div id="Initial_Analysis_on_Financial_Performance">
-    
-## 2.2 Feature Engineering
-
 <div id="Feature_Engineering">
+## 2.2 Feature Engineering
 
 Developed additional features related to orders, products, and sellers, to run further analysis on what exactly are driving low review scores and how we can eliminate them. 
 
@@ -161,24 +154,22 @@ Developed additional features related to orders, products, and sellers, to run f
 | `revenues`               | float  | total revenue contribution to Olist that is associated with this product  |
 | `profits`               | float  | total profit contribution to Olist that is associated with this product   |
 
+<div id="eda">
 ## 2.3 EXPLORATORY DATA ANALYSIS
 
 **Q. Which order features are impacting review scores?**\
 [Link to orders EDA](notebooks/EDA-orders.ipynb)
 
 - Wait time and delay vs expected has the strongest negative correlation with review scores.
-<div id="data_model">
+
 <img src='img/orders_corr.png' width='700'>
-<div id="olist_customers_dataset">
     
 - Wait time is the most powerful feature that explains likelihood of getting 1 star reviews.
   - Based on the multivariate logistic regression results, the wait_time coefficient of 0.84 indicates that an increase in wait time is associated with a higher likelihood of receiving a 1-star review. Specifically, for each unit increase in wait time, the probability of a 1-star review increases by 0.84, suggesting that longer wait times significantly impact customer satisfaction negatively.
   - This finding emphasizes the importance of managing wait times to improve review scores and overall customer experience.
 - Other features such as price, number of products, number of sellers, freight value, and the distance between sellers and customers did not exhibit high coefficients or had elevated p-values, indicating that they do not significantly explain low review scores.
 
-<div id="data_model">
 <img src='img/order_logistic_regression.png' width='700'>
-<div id="olist_customers_dataset">
 
 **Q. Which seller features are impacting review scores?**\
 [Link to sellers EDA](notebooks/EDA-sellers.ipynb)
@@ -186,13 +177,9 @@ Developed additional features related to orders, products, and sellers, to run f
 - Wait time and delay to carrier have high impact on lowering review scores, having the largest signifiance in the linear regression coefficients.
 - Seller state doesn't seem to be statistically significant when explaining review scores.
 
-<div id="data_model">
 <img src='img/seller_scatterplot.png' width='1000'>
-<div id="olist_customers_dataset">
 
-<div id="data_model">
 <img src='img/seller_regression.png' width='700'>
-<div id="olist_customers_dataset">
 
 **Q. Which product features are impacting review scores?**\
 [Link to sellers EDA](notebooks/EDA-products.ipynb)
@@ -204,25 +191,19 @@ Developed additional features related to orders, products, and sellers, to run f
 
 **Q. Which product categories are generating the most profit for Olist?**
 
-<div id="data_model">
 <img src='img/profits_category.png' width='1100'>
-<div id="olist_customers_dataset">
 
 **Q. Which product categories are generating the most loss for Olist?**
 
-<div id="data_model">
 <img src='img/loss_category.png' width='1100'>
-<div id="olist_customers_dataset">
     
 **Q. What happens if we remove the worst performing sellers?**
 
 You can expect to increase profit by **390K BRL** just by **removing the worst 347 sellers!**
 
-<div id="data_model">
 <img src='img/worst_sellers.png' width='1100'>
-<div id="olist_customers_dataset">
 
-
+<div id="conclusion">
 # 2.4 CONCLUSION/RECOMMENDATIONS
 
 1. Implement a ban on sellers who consistently misses shipping deadline
