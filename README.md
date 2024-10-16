@@ -51,7 +51,7 @@ Olist's data team gave us the following values for these scaling parameters:
 
 💡 The number of sellers and products are costly for IT systems. \
 💡 Yet square roots reflect scale-effects: IT-system are often more efficient as they grow bigger. \
-💡 Alpha > Beta means that Olist has a lower IT Cost with few sellers selling a lot of items rather than the opposite \
+💡 Alpha > Beta means that Olist has a lower IT Cost with few sellers selling a lot of items rather than the opposite 
 
 ## 2. DATA ANALYSIS
 - <a href="#Initial_Analysis_on_Financial_Performance">**1. Initial Analysis on Financial Performance**</a>
