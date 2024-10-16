@@ -59,7 +59,8 @@ Olist's data team gave us the following values for these scaling parameters:
 - <a href="#eda">**3. Exploratory Data Analysis**</a>
     - Q. Which order features are impacting review scores?
     - Q. Which seller features are impacting review scores?
-    - Q. Which product features are impacting review scores? 
+    - Q. Which product features are impacting review scores?
+    - Q. Are customerse really disappointed about certain products, regardless of slow delivery time?
     - Q. What happens if we remove the worst performing sellers?
 - <a href="#conclusion">**4. Conclusion/Recommendations**</a>
 
@@ -206,9 +207,11 @@ Scatterplot shows a trend that products with higher wait time and larger volume 
 
 <img src='img/loss_category.png' width='1100'>
 
-☝️ It seems that `large products` like `office_furniture` and `furniture_mattress_and_upholstery`, which happen to take longer to deliver, are performing worse than other products.
+**Q. Are customerse really disappointed about certain products, regardless of slow delivery time?**
 
-🤔 Are consumers disappointed about these products or by the slow delivery time ❓ 
+From our previous analysis, it seems that that `large products` like `office_furniture` and `furniture_mattress_and_upholstery`, which happen to take longer to deliver, are performing worse than other products.
+
+In our next analysis, we will find out if consumers are really disappointed about these products or simply by the slower delivery time by nature. 
 
 👉 Run an OLS to model `review_score` :
 * to isolate the real contribution of each product category on customer satisfaction, 
@@ -216,13 +219,13 @@ Scatterplot shows a trend that products with higher wait time and larger volume 
 
 <img src='img/product_cat_coefficients.png' width='1100'>
 
-**💡 Findings:**
+**Findings:**
 
-☝️ Furnitures are not in the list of significant coefficients! 
+* Furnitures are not in the list of significant coefficients! 
 
-😉 The low review_score for furnitures may result from the delivery rather than the product itself! 
+* This means that the low review_score for furnitures may result from the delivery rather than the product itself.
 
-💡On the contrary, `books`, `shoes`, and `food & drinks` are regularly driving higher reviews, even after accounting for generally quicker delivery time. 
+* On the contrary, `books`, `shoes`, and `food & drinks` are regularly driving higher reviews, even after accounting for generally quicker delivery time. 
 
 
 **Q. What happens if we remove the worst performing sellers?**
@@ -236,7 +239,8 @@ You can expect to increase profit by **390K BRL** just by **removing the worst 3
 # 2.4 CONCLUSION/RECOMMENDATIONS
 
 1. Implement a ban on sellers who consistently misses shipping deadline
-2. Ask customers to review each product separately so that we have cleaner data on review scores
-3. Ask sellers to upload at least to pictures in the posting
+2. Start a service that assists sellers to ship out heavy/large products
+3. Ask customers to review each product separately so that we have cleaner data on review scores
+4. Ask sellers to upload at least to pictures in the posting
 
 
